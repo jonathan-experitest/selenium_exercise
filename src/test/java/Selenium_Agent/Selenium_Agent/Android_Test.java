@@ -9,19 +9,19 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
 
-public class Chrome_Test {
+public class Android_Test {
 	
 	@Test
 	public void test() throws MalformedURLException, InterruptedException {
 		
 		DesiredCapabilities dc = new DesiredCapabilities();
-		dc = DesiredCapabilities.chrome();
+		dc = DesiredCapabilities.android();
 
 		dc.setCapability("user", "jonathan.aharon");
         dc.setCapability("password", "Sanford8");
         dc.setCapability("project", "Default");
         dc.setCapability("generateReport", true);
-        dc.setCapability("testName", "Chrome test");
+        dc.setCapability("testName", "Android test");
         dc.setCapability("newSessionWaitTimeout", 60);
         dc.setCapability("newCommandTimeout", 60);
 
